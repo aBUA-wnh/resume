@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Playful;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+@font-face {
+	font-family: Playful;
+	src: url("../fonts/锐字锐线俏皮简1.0.TTF");
+}
+
+/* 第二个内容 */
+.about_second_content {
+	padding-top: 70px;
+	padding-bottom: 45px;
+}
+
+/* 分割线 */
+.line {
+	height: 1px;
+	width: 100px;
+	background-color: #333;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.about_second_content p {
+	font-size: 13px;
+	color: #707B7C;
+	font-family: 'Raleway', sans-serif;
+}
+
+/* 第三个内容 */
+.about-third-content {
+	background-color: #E5E7E9;
+	padding: 80px 0;
+}
+
+.about-third-content h4 {
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-style: italic;
+}
+
+/* 第四个内容 */
+.about-fourth-content {
+	background-color: #707B7C;
+}
+
+.about-fourth-content .frame {
+	padding: 0;
+}
+
+.about-fourth-content .col-md-6 {
+	padding: 0;
+}
+
+.about-fourth-content .frame h3 {
+	text-align: center;
+	font-size: 25px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	color: #F2F3F4;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.about-fourth-content .frame p {
+	padding: 20px 50px;
+	color: #F2F3F4;
+}
+
+.about-third-content img {
+	width: 100%;
+}
+
+/* 清除浮动 */
+.clear {
+	clear: both;
+}

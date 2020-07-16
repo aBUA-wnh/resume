@@ -1,0 +1,496 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Playful;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+@font-face {
+	font-family: Playful;
+	src: url("../fonts/锐字锐线俏皮简1.0.TTF");
+}
+
+/* 头部导航 */
+.header {
+	height: 75px;
+	position: fixed;
+	background: #fff;
+	z-index: 999;
+	width: 100%;
+	border-bottom: 1px solid #f3f2f1;
+	top: 0;
+}
+
+.navbar-default {
+	color: #666;
+	height: 75px;
+	margin-bottom: 0;
+	background: #fff;
+	border-bottom: 1px solid #f3f2f1;
+}
+
+/* logo */
+.navbar-brand {
+	height: 73px;
+	font-size: 36px;
+	line-height: 45px;
+	font-family: Playful;
+}
+
+/* 导航标签 */
+.navbar-nav {
+	margin-top: 15px;
+}
+
+.navbar-nav>li>a {
+	font-family: Playful;
+	font-size: 16px;
+	color: #666;
+}
+
+.navbar-nav>li>a:hover {
+	color: #D8C9C9 !important;
+}
+
+.navbar-toggle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.label_a {
+	color: #D8C9C9 !important;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	left: 0;
+	background-color: #333;
+	min-width: 180px;
+	padding: 0;
+	text-align: left;
+}
+
+.dropdown-menu li {
+	display: block;
+	margin-right: 0;
+	padding-bottom: 0;
+	border-bottom: 1px solid #4c4c4c;
+}
+
+.dropdown-menu li a {
+	display: block;
+	line-height: 18px;
+	padding: 15px 15px;
+	color: #D8C9C9;
+}
+
+/* 汉堡菜单 */
+.navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover {
+	border-color: #fff;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: transparent;
+	background: #fff;
+}
+
+/* 第一个内容 */
+.first_content {
+	margin-top: 75px;
+}
+
+/* 背景 */
+.cont_box {
+	width: 100%;
+	height: 550px;
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	position: relative !important;
+	background-attachment: fixed !important;
+}
+
+/* 覆盖 */
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.29);
+}
+
+.content {
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.content h3 {
+	text-transform: uppercase;
+	font-family: Playful;
+	font-size: 50px;
+	color: #ffffff;
+	letter-spacing: 3px;
+}
+
+/* 第二个内容 */
+/* 标题 */
+.filters ul {
+	font-size: 15px;
+	text-align: center;
+	padding: 50px 0;
+	font-family: 'Palanquin', sans-serif;
+}
+
+.filters_li {
+	display: inline;
+	margin-right: 30px;
+	color: #7c7c7c;
+	letter-spacing: 1px;
+	cursor: pointer;
+	position: relative;
+	transition: .3s all;
+}
+
+.filters_li:after {
+	content: "";
+	height: 1px;
+	background-color: #2E86C1;
+	position: absolute;
+	width: 0%;
+	bottom: -2px;
+	left: 0;
+	transition: .3s all;
+}
+
+.filters_li:hover {
+	color: #2E86C1;
+}
+
+.filters_li:hover::after {
+	width: 100%;
+}
+
+.active {
+	color: #2E86C1;
+}
+
+.active:after {
+	content: "";
+	height: 1px;
+	background-color: #2E86C1;
+	position: absolute;
+	width: 100%;
+	bottom: -2px;
+	left: 0;
+	transition: .3s all;
+}
+
+/* 内容 */
+.works {
+	position: relative;
+	height: 1085px;
+}
+
+@media (max-width:1200px) {
+	.works {
+		height: 920px;;
+	}
+}
+
+@media (max-width:992px) {
+	.works {
+		height: 1500px;;
+	}
+}
+
+.works_box {
+	position: absolute;
+	transition: all .4s;
+}
+
+.works .item {
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+.works .item img {
+	position: relative;
+	transition: .3s all;
+}
+
+.works .item:hover .works_overlay {
+	opacity: .8;
+}
+
+.works .item:hover .works_img {
+	transform: scale3d(1.1, 1.1, 1.1);
+}
+
+/* 覆盖 */
+.works_overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #f5f5f5;
+	top: 0;
+	opacity: 0;
+	left: 0;
+	transition: 0.3s all;
+}
+
+.works_overlay .overlay-inner {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.works_overlay h3 {
+	font-size: 23px;
+	color: #5d5d5d;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.works_overlay h3 a {
+	text-decoration: none;
+	color: #424949;
+}
+
+.works_overlay h5 {
+	text-align: center;
+	font-size: 15px;
+	color: #757373;
+	letter-spacing: 1px;
+	padding-top: 10px;
+	text-decoration: none;
+}
+
+.works_overlay h5 a {
+	text-decoration: none;
+	color: #3c3a3a;
+}
+
+.works_box1 {
+	left: 0;
+	top: 0;
+}
+
+.works_box2 {
+	left: 390px;
+	top: 0;
+}
+
+.works_box3 {
+	left: 780px;
+	top: 0;
+}
+
+.works_box4 {
+	left: 390px;
+	top: 240px;
+}
+
+.works_box5 {
+	left: 0;
+	top: 269px;
+}
+
+.works_box6 {
+	left: 780px;
+	top: 298px;
+}
+
+.works_box7 {
+	left: 0;
+	top: 539px;
+}
+
+.works_box8 {
+	left: 780px;
+	top: 567px;
+}
+
+.works_box9 {
+	left: 390px;
+	top: 769px;
+}
+
+.works_box10 {
+	left: 0;
+	top: 816px;
+}
+
+.works_box11 {
+	left: 780px;
+	top: 836px;
+}
+
+@media (max-width:1200px) {
+	.works_box2 {
+		left: 323px;
+		top: 0;
+	}
+
+	.works_box3 {
+		left: 646px;
+		top: 0;
+	}
+
+	.works_box4 {
+		left: 323px;
+		top: 201px;
+	}
+
+	.works_box5 {
+		left: 0;
+		top: 225px;
+	}
+
+	.works_box6 {
+		left: 646px;
+		top: 249px;
+	}
+
+	.works_box7 {
+		left: 0;
+		top: 450px;
+	}
+
+	.works_box8 {
+		left: 646px;
+		top: 473px;
+	}
+
+
+	.works_box9 {
+		left: 323px;
+		top: 638px;
+	}
+
+	.works_box10 {
+		left: 0;
+		top: 682px;
+	}
+
+	.works_box11 {
+		left: 646px;
+		top: 698px;
+	}
+}
+
+@media (max-width:992px) {
+	.works_box2 {
+		left: 375px;
+		top: 0;
+	}
+
+	.works_box3 {
+		left: 375px;
+		top: 232px;
+	}
+
+	.works_box4 {
+		left: 0;
+		top: 259px;
+	}
+
+	.works_box5 {
+		left: 375px;
+		top: 519px;
+	}
+
+	.works_box6 {
+		left: 0;
+		top: 767px;
+	}
+
+	.works_box7 {
+		left: 375px;
+		top: 778px;
+	}
+
+	.works_box8 {
+		left: 0;
+		top: 1026px;
+	}
+
+
+	.works_box9 {
+		left: 375px;
+		top: 1046px;
+	}
+
+	.works_box10 {
+		left: 375px;
+		top: 1263px;
+	}
+
+	.works_box11 {
+		left: 0;
+		top: 1286px;
+	}
+}
+
+@media (max-width:768px) {
+	.works_box {
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+}
+
+/* 更多 */
+.more_box {
+	width: 140px;
+	margin: 40px auto;
+}
+
+.more_btn {
+	padding: 10px 40px 10px 40px;
+	border: 2px solid #aba5a5;
+	font-family: Playful;
+	color: #968f8f;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 11px;
+	letter-spacing: 2px;
+	transition: all .3s ease-in-out;
+	background: transparent;
+	outline: 0;
+}
+
+/* 页脚 */
+footer {
+	padding: 60px 0;
+	background: #f7f7f7;
+	position: relative;
+	font-size: 14px;
+	line-height: 23px;
+	font-family: Playful;
+}
+
+.footer {
+	text-align: center;
+}
